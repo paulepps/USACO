@@ -17,5 +17,6 @@ public class StreamIO {
 		 * flushes and closes the output stream.
 		 */
 		pw.close();
+		r.close();
 	}
 }
