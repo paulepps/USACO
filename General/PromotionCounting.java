@@ -8,11 +8,9 @@ public class PromotionCounting {
 		BufferedReader r = new BufferedReader(new FileReader("promote.in"));
 		PrintWriter pw = new PrintWriter("promote.out");
 
-		StringTokenizer st = new StringTokenizer(r.readLine());
-		int bronzeStart = Integer.parseInt(st.nextToken());
-		int bronzeEnd = Integer.parseInt(st.nextToken());
+		r.readLine();
 
-		st = new StringTokenizer(r.readLine());
+		StringTokenizer st = new StringTokenizer(r.readLine());
 		int silverStart = Integer.parseInt(st.nextToken());
 		int silverEnd = Integer.parseInt(st.nextToken());
 
