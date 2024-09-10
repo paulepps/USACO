@@ -5,7 +5,6 @@ public class MeasuringTraffic {
 	public static void main(String[] args) throws IOException {
 		BufferedReader r = new BufferedReader(new FileReader("traffic.in"));
 		PrintWriter pw = new PrintWriter("traffic.out");
-		PrintWriter console = new PrintWriter(System.out);
 
 		class Sensor {
 			int low;
