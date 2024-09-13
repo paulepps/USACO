@@ -1,21 +1,21 @@
 import java.io.*;
 import java.util.*;
 
+class Sensor {
+	int low;
+	int high;
+	String type;
+	Sensor(int low, int high, String type) {
+		this.low = low;
+		this.high = high;
+		this.type = type;
+	}
+}
+
 public class MeasuringTraffic {
 	public static void main(String[] args) throws IOException {
 		BufferedReader r = new BufferedReader(new FileReader("traffic.in"));
 		PrintWriter pw = new PrintWriter("traffic.out");
-
-		class Sensor {
-			int low;
-			int high;
-			String type;
-			Sensor(int low, int high, String type) {
-				this.low = low;
-				this.high = high;
-				this.type = type;
-			}
-		}
 
 		int low = 0;
 		int high = (int)1e9;
