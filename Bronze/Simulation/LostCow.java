@@ -19,7 +19,7 @@ public class LostCow {
 		while (true) {
 			if (dir == 1) {
 				if (pos <= y && y <= x + move) {
-					distance += y - pos;
+					distance += y - pos; 
 					break;
 				} else {
 					distance += (x + move) - pos;
@@ -27,7 +27,7 @@ public class LostCow {
 					dir = -1;
 				}
 			} else {
-				if (x - move <= y && y <= pos) {
+				if (y <= pos && y >= x - move) {
 					distance += pos - y;
 					break;
 				} else {
